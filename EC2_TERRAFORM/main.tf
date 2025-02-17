@@ -7,7 +7,7 @@ resource "aws_instance" "example" {
 
  key_name = "Docker"
 
-user_data = <<-EOF
+ user_data = <<-EOF
               #!/bin/bash
               # Install docker
               apt-get update
