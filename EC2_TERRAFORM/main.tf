@@ -19,7 +19,7 @@ resource "aws_instance" "example" {
                  stable"
               apt-get update
               apt-get install -y docker-ce
-              usermod -aG docker ubuntu
+              sudo usermod -aG docker ubuntu
               EOF
 
  tags = {
